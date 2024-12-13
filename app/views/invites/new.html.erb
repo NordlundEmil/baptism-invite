@@ -1,0 +1,21 @@
+<%= form_with model: @invite, local: true do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.email_field :email %>
+  </p>
+  <p>
+    <%= f.label :rsvp %><br>
+    <%= f.check_box :rsvp %> Attending?
+  </p>
+  <p>
+    <%= f.label :message, "Message or Note" %><br>
+    <%= f.text_area :message %>
+  </p>
+  <p>
+    <%= f.submit "Send RSVP" %>
+  </p>
+<% end %>

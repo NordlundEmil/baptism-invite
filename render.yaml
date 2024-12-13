@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: baptism-invite
+    env: ruby
+    buildCommand: bundle install && rails db:migrate
+    startCommand: rails server -b 0.0.0.0 -p 3000
+    plan: starter
+    envVars:
+      - key: RAILS_ENV
+        value: production
