@@ -16,3 +16,4 @@ node_modules/
 
 # Ignore credentials
 config/master.key
+config/master.key
