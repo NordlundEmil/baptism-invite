@@ -8,6 +8,3 @@ inherit_gem:
 AllCops:
   NewCops: enable
   TargetRubyVersion: 3.3
-
-Style/StringLiterals:
-  Enabled: false
