@@ -6,9 +6,9 @@ class InvitesController < ApplicationController
   def create
     @invite = Invite.new(invite_params)
     if @invite.save
-      redirect_to thank_you_path, notice: "Thank you for your RSVP!"
+      redirect_to thank_you_path, notice: 'Thank you for your RSVP!'
     else
-      render :new, alert: "Something went wrong."
+      render :new, alert: 'Something went wrong.'
     end
   end
 
