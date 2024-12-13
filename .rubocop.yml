@@ -1,6 +1,10 @@
-# Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
+AllCops:
+  NewCops: enable
 
 Style/StringLiterals:
+  Enabled: true
   EnforcedStyle: double_quotes
   ConsistentQuotesInMultiline: true
