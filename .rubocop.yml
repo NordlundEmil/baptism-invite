@@ -1,7 +1,15 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
 AllCops:
   NewCops: enable
+  TargetRubyVersion: 3.3
 
 Style/StringLiterals:
   Enabled: true
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
   ConsistentQuotesInMultiline: true
